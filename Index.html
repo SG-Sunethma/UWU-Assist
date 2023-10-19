@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <title>UWU ASSIST</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="UWU_ASSIST.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="Login and sign up/SignupPage.css"> -->
+        <!-- <link rel="stylesheet" href="Login and sign up/Loginpage.css"> -->
+        <link rel="stylesheet" href="sevice2.css">
+        <link rel="stylesheet" href="about/uwuassist.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+    </head>
+    
+<body>
+    
+<!---------------------------------------------------------------------HOME PAGE---------------------------------------------------------------->
+
+
+    <div id="mySidenav" class="sidenav">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <a href="#">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#service">SERVICES</a>
+        <a href="Login and sign up/Loginpage.html" target="_blank">LOGIN</a>
+    </div>
+    
+
+
+    
+    <div class="marquee">
+        <div  id="main">
+
+            <div class="col-md-12 d-flex">
+                <div>
+                    <img src="mimages/logo white.png" alt="logo" class="col-md-1" />
+                </div>
+
+                <span style="font-size:30px;cursor:pointer" "color: rgb(225,225,225);" onclick="openNav()">&#9776;</span>
+            
+            </div>
+            
+            <div class="container">
+                
+                <div classname="title-1" style="position: absolute !important; z-index: 3; top:35vh; width:100vw; text-align: center;">        
+                    <h1 data-aos="fade-up"  data-aos-duration="1500">WELCOME TO UWU ASSIST</h1> 
+                </div>
+                
+                <div  classname="slide-marquee">
+                    <ul class="marquee-content" >
+                    <li><img src="mimages/medical%20center%20png.png"></li>
+                    <li><img src="mimages/cafeteria%20png.png"></li>
+                    <li><img src="mimages/hostals%20png.png"></li>
+                    <li><img src="mimages/transport png2.png"></li>
+                    </ul>
+                </div>
+            
+            </div> 
+            
+        </div>
+        
+            <script>
+                const root = document.documentElement;
+                const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+                const marqueeContent = document.querySelector("ul.marquee-content");
+
+                root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+                for(let i=0; i<marqueeElementsDisplayed; i++) {
+                marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+                }
+        </script>
+     
+     </div>     
+    
+     
+    
+
+   
+       
+   
+    
+
+    
+
+    
+<!---------------------------------------------------------------------HOME PAGE is over-------------------------------------------------------->
+
+
+<!---------------------------------------------------------------------SERVICE PAGE---------------------------------------------------------------->
+<div class="slider-main">
+
+
+    <div class="title">
+        <h2 id="service" style="z-index: 3; text-align: center;">SERVICES</h2>
+    </div>
+    <div>
+        <P style="z-index: 3; text-align: center; color: white; font-size: medium;">choose your service</P>
+    </div>
+
+    <div class="slide-container">
+    
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+
+        <div class="image-slider">
+            <style>
+            
+            </style>
+        
+            <div class="slides-div" id="slide-1"><img src="mimages/medi2test.png" alt="" class="img" id="img1"><a href="#slider-span1" class="button" id="button1"><a href="medical/medical test.html" target="_blank">MEDICAL CENTER</a></a></div> 
+            
+            <div class="slides-div" id="slide-2"><img src="mimages/cafeteria png l.png" alt="" class="img" id="img2"><a href="#slider-span2" class="button" id="button2"></a><a href="cafeteria/3.html" target="_blank">CAFETERIA</a></div>
+            
+            <div class="slides-div" id="slide-3"><img src="mimages/hostals lo.png" alt="" class="img" id="img3"><a href="#slider-span3" class="button" id="button3"></a><a href="hostals.html" target="_blank">HOSTELS</a></div>
+            
+            <div class="slides-div" id="slide-4"><img src="mimages/transport pngtest.png" alt="" class="img" id="img4"><a href="#slider-span4" class="button" id="button4"><a href="about/transport.html" target="_blank">TRANSPORT</a></div>
+
+        </div>
+
+
+    </div>
+</div>
+
+<!---------------------------------------------------------------------SERVICE PAGE is over-------------------------------------------------------->
+
+<!---------------------------------------------------------------------ABOUT PAGE----------------------------------------------------------------->
+
+
+ <section class="about">
+    <div class="about-main">
+        <img src="about/photos/bg3.jpg">
+        <div class="all-text">
+            <h1 id="about">Get to Know Us</h1>
+            <h4>We are on a mission to help</h4>
+            <p>The main purpose of this web page is to find out the basic needs of the students of Uva Wellassa university of Sri Lanka.  
+                Our aim is to find solutions to the problems according to medical,Transport,cafeteria and Hostel. 
+                Using UWU Assists we can check and order the food menu available in the canteen through the cafeteria service. 
+                Also, you can find out the times of university transport as well as the public transport, contact a private wheel only if necessary in case of emergency, you can do it easily through our transport service.</p>
+            
+            <button type="button" class="aboutbutton"><a href="#team" >Our Team</a></button>
+            <button type="button" class="aboutbutton" style="background-color: gray;">Explore More</button>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--------our team---------->
+<section class="team_section" background="about/photos/corporate-team-bckgrnd-1400x600.jpg">
+    <div class="titelofaboutpage">
+        <h1 id="team">Our Team</h1>
+    </div>
+    <div class="mainfoaboutpage">
+        <div class="profile-card-team">
+            <div class="aboutpage-team-img">
+                <img src="about/photos/sachira white.png">
+            </div>
+            <div class="profile-card-team-caption">
+                <h3>Sachira Gavinda</h3>
+                <p>Team Leader</p><br>
+                <div class="profile-card-team-social-links">
+                    <a href="https://www.facebook.com/sachira.karunarathna.589" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card-team">
+            <div class="aboutpage-team-img">
+                <img src="about/photos/sunethma white 1.png">
+            </div>
+            <div class="profile-card-team-caption">
+                <h3>Sunethma Gamlath</h3>
+                <p>Front-end developer</p>
+                <div class="profile-card-team-social-links">
+                    <a href="https://www.facebook.com/nethu.gamlath.9" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/___gad_s_x_n_x___/"  target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card-team">
+          <div class="aboutpage-team-img">
+              <img src="about/photos/kavishan white.png">
+          </div>
+          <div class="profile-card-team-caption">
+              <h3>Kavishan Edirisinghe</h3>
+              <p>Back-end developer</p>
+              <div class="profile-card-team-social-links">
+                  <a href="https://www.facebook.com/kavishan.edirisinghe" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+        <div class="profile-card-team">
+            <div class="aboutpage-team-img">
+                <img src="about/photos/SquareLite_2022620113511819.jpg">
+            </div>
+            <div class="profile-card-team-caption">
+                <h3>Binadi Mandini</h3>
+                <p>Designer</p><br>
+                <div class="profile-card-team-social-links">
+                    <a href="https://www.facebook.com/binadhi.perera"  target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/biisaaayyyyy/"  target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card-team">
+            <div class="aboutpage-team-img">
+                <img src="about/photos/madura white.png">
+            </div>
+            <div class="profile-card-team-caption">
+                <h3>Madura Bhashitha</h3>
+                <p>Front-end developer</p>
+                <div class="profile-card-team-social-links">
+                    <a href="https://www.facebook.com/search/top/?q=madura%20bashitha"  target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/___madura___/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-card-team">
+            <div class="aboutpage-team-img">
+                <img src="about/photos/sandeepani white.png">
+            </div>
+            <div class="profile-card-team-caption">
+                <h3>Sandeepani Thathsarani</h3>
+                <p>Designer</p><br>
+                <div class="profile-card-team-social-links">
+                    <a href="https://www.facebook.com/sandeepani.thathsarani.7" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!---------------------------------------------------------------------ABOUT PAGE is over-------------------------------------------------------->
+
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------LOG IN PAGE is over------------------------------------------------------>
+<!---------------------------------------------------------------------------------------------------------------------------------------------->
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginRight = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginRight= "0";
+            document.body.style.backgroundColor = "white";
+            }
+    </script>
+</body>
+</html> 
